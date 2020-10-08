@@ -1,6 +1,6 @@
 # Crear router-nat con Vagrant
 
-![imagen escenario](https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/router.png)
+![imagen escenario](https://github.com/CeliaGMqrz/router_nat_vagrant_vbox/blob/main/router.png)
 
 
 ## Queremos automatizar la creación de la siguiente infraestructura usando Vagrant, el esquema que queremos desarrollar, que vemos en la imagen, tiene las siguientes características:
@@ -46,7 +46,7 @@ end
 ```
 
 
-## CONFIGURAR ROUTER
+## 2. CONFIGURAR ROUTER
 
 * Para que nuestra máquina actúe como router tenemos que activar el bit de fordward. Podemos hacerlo temporal o permanente. En este caso lo haremos permanente. Para ello editamos el fichero /etc/sysctl.conf , buscamos la línea ‘net.ipv4.ip_fordward=’1 y la descomentamos.
 
@@ -162,7 +162,7 @@ vagrant@router:~$ ip a
 * **eth1** (192.168.100.113) es nuestra dirección pública, el enlace entre el router y  nuestra máquina anfitriona.
 * **eth2** (10.0.0.1), la interfaz de la red privada que se comunica con nuestro cliente en forma de puerta de enlace.
 
-## CONFIGURAR CLIENTE
+## 3. CONFIGURAR CLIENTE
 
 * Configuramos el cliente. Editamos el fichero 'interfaces'
 
